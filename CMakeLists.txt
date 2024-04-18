@@ -2,16 +2,9 @@ cmake_minimum_required( VERSION 3.5.1 )
 
 project(lab_2_blending)
 
-# Compiler flags
-if (MSVC)
-  set(compiler_options /W4)
-  add_definitions(/D_USE_MATH_DEFINES)
-else ()
-  set(compiler_options -Wall -Wextra -Wpedantic)
-endif (MSVC)
 
 # Find libraries
-find_package(OpenCV 3.3.1 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 add_executable(${PROJECT_NAME}
   main.cpp
@@ -25,4 +18,4 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
 target_compile_options(${PROJECT_NAME} PRIVATE ${compiler_options})
-set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD_REQUIRED ON CXX_STANDARD 11)
+set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD_REQUIRED ON CXX_STANDARD 17)

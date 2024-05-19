@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # lab_2
 
 
@@ -90,3 +91,7 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+=======
+# opencv-lab-of-blending
+Lab : An opencv lab of blending.Contain of linear blending image, circle blending image and Gauss blending.
+>>>>>>> a8711ddd576cf9cbd9277c29f451a1ef65febbf6
